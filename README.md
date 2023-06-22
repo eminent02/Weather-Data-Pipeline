@@ -13,9 +13,13 @@ Implementation of error handling mechanisms and logging to ensure pipeline relia
 Data quality checks to validate the accuracy and integrity of the transformed data.
 ## Installation
 *  Clone the repository:
-    git clone https://github.com/your-username/your-repo.git
+```python 
+git clone https://github.com/your-username/your-repo.git
+```
 * Install the required dependencies:
-    pip install -r requirements.txt
+```python 
+pip install -r requirements.txt
+```
 * Set up the necessary configuration parameters in .env file.
 ## Usage
 * Ensure that Airflow is up and running, and the necessary connections and variables are configured.
