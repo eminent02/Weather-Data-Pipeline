@@ -1,5 +1,5 @@
 # Building an Automated Weather Data Pipeline with Airflow: From Ingestion to Data Warehouse
-This project aims to automate the collection and processing of real-time weather data through a data pipeline. The pipeline utilizes Airflow, an open-source platform, to orchestrate the workflow from data ingestion to storage in a data warehouse.
+This project aims to automate the collection and processing of real-time weather data using Airflow, an open-source platform for workflow management. The pipeline orchestrates the entire workflow, from data ingestion to storage in a data warehouse.
 
 ## Features
 * Integration with OpenWeatherMap API for retrieving real-time weather data.
@@ -18,11 +18,12 @@ git clone https://github.com/your-username/your-repo.git
 pip install -r requirements.txt
 ####Set up the necessary configuration parameters in .env file.
 ## Usage
-Ensure that the required dependencies and configuration are set up correctly.
-#### Run the main pipeline script:
-python pipeline.py
-The pipeline will automatically fetch real-time weather data, transform it, and load it into the data warehouse.
-Monitor the logs and output for any errors or issues during the pipeline execution.
+* Ensure that Airflow is up and running, and the necessary connections and variables are configured.
+* Copy the DAG file weather_pipeline.py to the DAGs directory of your Airflow installation.
+* Trigger the DAG in the Airflow UI or use the Airflow CLI to start the pipeline execution.
+* The pipeline will automatically fetch real-time weather data, transform it, and load it into the data warehouse.
+* Monitor the Airflow UI or logs for any errors or issues during the pipeline execution.
+
 Contributing
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
 
